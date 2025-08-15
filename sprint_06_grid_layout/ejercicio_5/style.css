@@ -1,0 +1,17 @@
+body {
+    background: #F2F2F2;
+    font-size: 14px;
+}
+
+.root {
+    height: 100vh;
+    font-family: Helvetica, Arial, sans-serif;
+    display: grid;
+    grid-gap: 2em;
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-rows: 100px repeat(2, 1fr) 100px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 2em;
+}

@@ -2,7 +2,7 @@
     max-width: 980px;
     font-family: Helvetica, Arial, sans-serif;
     font-size: 26px;
-    display: flex;
+    display: grid;
     margin: 0 auto;
 }
 
