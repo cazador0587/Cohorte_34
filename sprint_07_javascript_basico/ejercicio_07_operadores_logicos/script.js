@@ -39,11 +39,62 @@ Si la persona no puede entrar, se muestra: "Lo sentimos, esta sección está res
  * 
 */
 
-let cardNumber = 123; // Ejemplo de ID de membresía (0 significa que no hay membresía)
-let role = "invitado"; // El estado puede ser "invitado", "estudiante" o cualquier otro
+const cardNumber = 123; // Ejemplo de ID de membresía (0 significa que no hay membresía)
+const role = "invitado"; // El estado puede ser "invitado", "estudiante" o cualquier otro
 
 if (cardNumber > 0 || role === "estudiante")  {
   console.log("¡Acceso concedido! Disfruta de tus libros.");
 } else {
   console.log("Lo sentimos, esta sección está restringida.");
+}
+
+
+/*
+Estás trabajando en una aplicación de suscripción que da a los usuarios acceso a contenido premium.
+
+Cada usuario tiene una variable hasSubscription (tiene suscripción). Si no tienen una suscripción, debes mostrar un mensaje pidiéndoles que actualicen su suscripción.
+
+Si no tienen una suscripción, muestra:
+
+"Suscríbete ahora para desbloquear contenido premium."
+
+Si la tienen, muestra:
+
+"¡Te damos la bienvenida de nuevo, usuario premium!"
+*/
+
+let hasSubscription = false;
+
+if (!hasSubscription) {
+  console.log("Suscríbete ahora para desbloquear contenido premium.");
+} else {
+  console.log("¡Te damos la bienvenida de nuevo, usuario premium!");
+}
+
+/**
+ * Estás construyendo un sistema de control de seguridad para un centro de investigación. Una persona puede participar si cumple al menos una de estas condiciones:
+
+Su nivel de autorización (clearenceLevel) es 5 o superior.
+Tienen un pase de acceso especial (hasAccessPass).
+Sin embargo, las personas incluidas en la lista de rechazados (isBlacklisted) siempre tienen el acceso denegado, independientemente de otras condiciones.
+
+Tu tarea es implementar un programa que evalúe si a una persona se le concede acceso o se le deniega la entrada en función de estas condiciones:
+
+Si la persona está en la lista de rechazados, muestra: "Acceso denegado. Estás en la lista de rechazados."
+Si la persona cumple una de las condiciones de seguridad, muestra: "Acceso concedido. Te damos la bienvenida al área restringida."
+Si la persona no cumple con todas las condiciones, muestra: "Acceso denegado. No tienes la autorización requerida."
+Utiliza sentencias if, else if, y else con operadores lógicos para determinar si la persona puede entrar o no en el área restringida.
+ * 
+ */
+
+const clearanceLevel = 4;  // Ejemplo de nivel de autorización
+const hasAccessPass = false; // Ejemplo de estado del pase de acceso
+const isBlacklisted = false; // Ejemplo de estado de la lista de rechazados
+
+if (isBlacklisted) {
+  console.log("Acceso denegado. Estás en la lista de rechazados.");
+} else if (clearanceLevel >= 5 || hasAccessPass) {
+  console.log("Acceso concedido. Te damos la bienvenida al área restringida.");
+} else {
+  console.log("Acceso denegado. No tienes la autorización requerida.");
 }
