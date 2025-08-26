@@ -98,3 +98,22 @@ if (isBlacklisted) {
 } else {
   console.log("Acceso denegado. No tienes la autorización requerida.");
 }
+
+let counter = 7;
+counter++;
+counter -= 2;
+console.log(counter);
+
+
+let points = 4;
+points += 3;
+points--;
+points--;
+console.log(points);
+
+let i = 0;
+
+while (i < 5) {
+  i++;
+  console.log(i);
+}
