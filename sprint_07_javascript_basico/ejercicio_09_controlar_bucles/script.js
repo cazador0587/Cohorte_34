@@ -84,3 +84,11 @@ for (let i = 1; i <= 10; i++) {
   }
   console.log(`El participante ${i} puede competir`);
 }
+
+for (let i = 0; i <= 6; i++) {
+    console.log('¡Hola, mundo!');
+  if (i === 3) {
+    continue;
+  }
+
+}
