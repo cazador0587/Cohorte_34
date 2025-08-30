@@ -29,7 +29,7 @@ console.log(morningList);*/
  * 
  */
 
-let morningList = [
+/*let morningList = [
   'Levantarse de la cama',
   'Cepillarse los dientes',
   'Ver las redes sociales',
@@ -41,4 +41,20 @@ console.log("Primer elemento:", morningList[0]);
 
 // Último elemento → índice = length - 1
 let ultimoIndice = morningList.length - 1;
-console.log("Último elemento:", morningList[ultimoIndice]);
+console.log("Último elemento:", morningList[ultimoIndice]);*/
+
+let morningList = [
+  "Levantarse de la cama",
+  "Cepillarse los dientes",
+  "Ver las redes sociales",
+  "Desayunar",
+];
+
+// Sustituir el tercer elemento (índice 2)
+morningList[2] = 'Ejercicio';
+
+// Agregar "Lavar los platos" al final del array
+morningList[morningList.length] = 'Lavar los platos';
+
+// Mostrar la nueva versión en consola
+console.log(morningList);
